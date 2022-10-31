@@ -1,0 +1,273 @@
+@use "../global/variables";
+
+@media(max-width: 1240px) {
+
+// GENERAL
+
+.blogPostText, .blogPostSideBarText, .authorCommentPostDate, .firstCommentText, .secondCommentText {
+        p, li {
+        font-size: 1.8rem;
+    }
+}
+
+// HEADER
+
+.blogHeader {
+    .blogContactHeaderLogo {
+        padding-top: 4rem;
+    }
+}
+
+// BLOG POST
+
+.blogPostText {
+    padding-right: 3.25rem;
+
+    h3 {
+        font-size: 2.9rem;
+        line-height: 4.8rem;
+    }
+}
+
+.blogPostSideBarText, .userCommentsContainer {
+    h4 {
+        font-size: 2.3rem;
+        line-height: 3.8rem;
+    }
+}
+
+.blogPostContent {
+    min-width: 60rem;
+}
+}
+
+
+@media(max-width: 960px) {
+
+// GENERAL
+
+.blogPostText, .blogPostSideBarText, .authorCommentPostDate, .firstCommentText, .secondCommentText {
+    p, li {
+        font-size: 1.5rem;
+    }
+}
+
+
+// HEADER 
+
+.blogHeader {
+    nav {
+        font-size: 1.8rem;
+    }
+}
+
+.blogNav {
+    li {
+        margin-left: 5rem;
+    }
+}
+
+.blogHeader {
+    .blogContactHeaderTitle {
+        h1 {
+            font-size: 6.3rem;
+        }
+    }
+}
+
+.blogPost {
+    flex-wrap: wrap;
+}
+
+.blogPostContent {
+    margin: 0 auto;
+    width: 90%;
+    border: none;
+}
+
+.blueSofaBedImg {
+    img {
+        box-shadow: 0 5rem 0 -2rem variables.$brightYellow;
+    }
+}
+
+.blogPostText {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -7.5rem;
+    margin-bottom: 7.5rem;
+
+    h3 {
+        font-size: 3.3rem;
+        line-height: 5.8rem;
+    }
+
+    p {
+        margin: 2.2rem 0;
+    }
+}
+
+.blogPostSideBar {
+    width: 65%;
+    margin: 0 auto 8rem;
+    text-align: center;
+    top: 0;
+    border: 0.1rem solid variables.$black;
+
+    img {
+        display: none;
+    }
+}
+
+.blogPostSideBarText {
+    box-shadow: none;
+}
+
+
+// USER COMMENTS
+
+.firstCommentText, .secondCommentText {
+    width: 100%;
+}
+
+.commentNameEmail {
+    input[type=text], 
+    input[type=email] {
+        width: 50rem;
+    }
+
+    input[type=text] {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+}
+
+@media(max-width: 760px) {
+
+// HEADER
+
+.blogNav {
+    display: none;
+}
+
+.blogHamburgerMenu {
+    display: block;
+    margin-top: 1rem;
+    right: -2rem;
+    top: -5rem;
+
+    label {
+        margin-right: 4.5rem;
+    }
+}
+
+
+// BLOG POST
+
+.blogPostContent {
+    min-width: 20rem;
+}
+
+.blogPostText {
+    h3 {
+        text-align: center;
+    }
+}
+}
+
+@media (max-width: 560px) {
+
+// GENERAL
+
+.blogPostText, .blogPostSideBarText, .authorCommentPostDate, .firstCommentText, .secondCommentText {
+    p, li {
+        font-size: 1.3rem;
+        line-height: 2.6rem;
+    }
+}
+
+
+// HEADER 
+
+.blogHeader {
+    .blogContactHeaderTitle {
+        h1 {
+            font-size: 5.8rem;
+        }
+    }
+}
+
+.blogHamburgerMenu {
+    right: -3.5rem;
+
+    label {
+        margin-left: 0;
+    }
+
+    input:checked ~ .menuContent {
+        max-width: 85%;
+        li {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// BLOG
+
+.blogPostText {
+    text-align: center;
+
+    h3 {
+        font-size: 2.9rem;
+        line-height: 4.4rem;
+      }
+}
+
+.blogPostSideBar {
+    width: 75%;
+}
+
+.authorBlogPostDate {
+    text-align: center;
+}
+
+// USER COMMENTS
+
+.firstCommentImg, .secondCommentImg {
+    margin-right: 3rem;
+}
+
+.postComment {
+    form {
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 1.75rem;
+        }
+    }
+}
+
+.commentNameEmail {
+    input[type=text], 
+    input[type=email] {
+        font-size: 1.75rem;
+        width: 90%;
+        padding: 2rem;
+    }
+}
+
+.commentSubmission {
+    textarea {
+        font-size: 1.75rem;
+        padding: 2rem;
+    }
+}
+
+// FOOTER 
+
+.blogFooter {
+    p {
+        font-size: 1.4rem;
+    }
+}
+}

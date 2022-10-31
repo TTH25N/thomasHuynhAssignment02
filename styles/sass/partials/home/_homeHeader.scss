@@ -1,0 +1,37 @@
+@use "../global/variables";
+
+.homeHeader {
+    background-image: url(../images/header-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75rem;
+}
+
+.homeHamburgerMenu {
+    display: none;
+}
+
+.homeNav {
+    justify-content: flex-end;
+
+    li {
+        &:first-child {
+            border-bottom: 0.45rem solid variables.$brightYellow;
+        }
+    }
+}
+
+.homeHeaderTitle {
+    width: 45%;
+    padding: 5rem 0 5rem 12.5rem;
+}
+
+.blueCouchImg {
+    width: 55%;
+
+    img {
+        min-width: 75rem;
+    }
+}
+

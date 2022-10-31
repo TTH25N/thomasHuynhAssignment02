@@ -1,0 +1,39 @@
+@use "../global/variables";
+
+.externalResources {
+    padding: 10rem 0;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+            width: 47.5%;
+            display: flex;
+            margin-bottom: 5rem;
+        }
+
+        li:nth-of-type(2n) {
+            margin-left: 5rem;
+        }
+    }
+}
+
+.icon {
+    background-color: variables.$brightYellow;
+    align-self: flex-start;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.file {
+    padding: 1.5rem 2rem;
+}
+
+.externalResourcesText {
+    margin-top: 1.5rem;
+    margin-left: 2.5rem;
+}

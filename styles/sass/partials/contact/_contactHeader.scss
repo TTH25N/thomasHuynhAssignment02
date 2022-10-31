@@ -1,0 +1,21 @@
+@use "../global/variables";
+
+.contactHeader {
+    background-image: url(../images/contact-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 56.8rem;
+}
+
+.contactHamburgerMenu {
+    display: none;
+}
+
+.contactNav {
+    li {
+        &:nth-child(4) {
+            border-bottom: 0.45rem solid variables.$brightYellow;
+        }
+    }
+}

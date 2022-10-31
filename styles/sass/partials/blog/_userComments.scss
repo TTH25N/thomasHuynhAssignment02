@@ -1,0 +1,88 @@
+@use "../global/variables";
+
+.userCommentsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h4 {
+        margin: 4.5rem 0;
+    }
+}
+
+.firstComment, .secondComment {
+    display: flex;
+    margin-bottom: 10rem;
+}
+
+.firstCommentImg, .secondCommentImg {
+    margin-right: 4rem;
+}
+
+.firstCommentText, .secondCommentText {
+    width: 50%;
+}
+
+.authorCommentPostDate {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+
+.postComment {
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input::placeholder,
+        textarea::placeholder {
+            text-transform: uppercase;
+            color: variables.$black;
+            font-size: 2rem;
+            letter-spacing: 0.21rem;
+            opacity: 1;
+        }
+    }
+}
+
+.commentNameEmail {
+    margin-bottom: 5rem;
+
+    input[type=text], 
+    input[type=email] {
+        height: 5rem;
+        width: 40rem;
+        font-size: 2rem;
+        background-color: variables.$ice;
+        border: none;
+        border-bottom: 0.2rem solid variables.$everGreen;
+        padding: 4rem;
+        margin-right: 5rem;
+    }
+
+    input[type=email] {
+        margin-right: 0;
+    }
+}
+
+.commentSubmission {
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+        height: 20rem;
+        width: 100%;
+        font-size: 2rem;
+        background-color: variables.$ice;
+        border: 0.2rem solid variables.$everGreen;
+        padding: 4rem;
+        resize: none;
+    }
+
+    .button {
+        margin-top: 4rem;
+        margin-bottom: 10rem;
+        align-self: stretch;
+    }
+}

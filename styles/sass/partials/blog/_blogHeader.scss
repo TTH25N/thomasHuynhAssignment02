@@ -1,0 +1,21 @@
+@use "../global/variables";
+
+.blogHeader {
+    background-image: url(../images/blog-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 56.8rem;
+}
+
+.blogHamburgerMenu {
+    display: none;
+}
+
+.blogNav {
+    li {
+        &:nth-child(3) {
+            border-bottom: 0.45rem solid variables.$brightYellow;
+        }
+    }
+}

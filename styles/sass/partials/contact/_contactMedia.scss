@@ -1,0 +1,234 @@
+@use "../global/variables";
+
+@media(max-width: 960px) {
+
+// HEADER 
+
+.contactHeader {
+    .blogContactHeaderLogo {
+        padding-top: 4rem;
+    }
+}
+
+.contactHeader {
+    nav {
+        font-size: 1.8rem;
+    }
+}
+
+.contactNav {
+    li {
+        margin-left: 5rem;
+    }
+}
+
+.contactHeader {
+    .blogContactHeaderTitle {
+        h1 {
+            font-size: 6.3rem;
+        }
+    }
+}
+
+// CONTACT INFO 
+
+.contactInfoContainer {
+    flex-wrap: wrap;
+}
+
+.postMessage {
+    left: 0;
+    box-shadow: 0 5rem 0 -2rem variables.$brightYellow;
+}
+
+.messageNameEmail {
+    input[type=text], 
+    input[type=email] {
+        width: 50rem;
+    }
+}
+
+.locationAddress {
+    p {
+        font-size: 2.4rem;
+    }
+}
+
+.socialIcons {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.fa-facebook-f, .fa-instagram, .fa-twitter {
+    padding-right: 4rem;
+}
+
+.socialsLocation {
+    margin-top: -5rem;
+    margin-bottom: 7.5rem;
+    width: 100%;
+    text-align: center;
+}
+}
+
+
+@media(max-width: 760px) {
+
+// HEADER
+
+.contactHeader {
+    background-position: right -20rem center;
+}
+
+.contactNav {
+    display: none;
+}
+
+.contactHamburgerMenu {
+    display: block;
+    margin-top: 1rem;
+    right: -2rem;
+    top: -5rem;
+
+    label {
+        margin-right: 4.5rem;
+    }
+}
+
+.contactHeader {
+    .blogContactHeaderTitle {
+        h1 {
+            font-size: 5.8rem;
+        }
+    }
+}
+
+
+// CONTACT INFO
+
+.postMessage {
+    padding: 6.5rem 4.5rem; 
+
+    form {
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 1.75rem;
+        }
+    }
+}
+
+.messageNameEmail {
+    input[type=text], 
+    input[type=email] {
+        font-size: 1.75rem;
+        width: 80%;
+        padding-left: 2rem;
+    }
+}
+
+.messageSubmission {
+    textarea {
+        font-size: 1.75rem;
+        padding-top: 3rem;
+        padding-left: 3rem;
+    }
+}
+
+.locationAddress {
+    p {
+        font-size: 2rem;
+    }
+}
+}
+
+@media(max-width: 560px) {
+
+// CONTACT INFO
+
+.postMessage {
+    padding: 5rem 4rem; 
+}
+
+    .messageNameEmail {
+        input[type=text], 
+        input[type=email] {
+            padding-bottom: 3rem;
+        }
+    }
+    
+    .locationAddress {
+        p {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media(max-width: 460px) {
+
+// HEADER
+
+    .contactHamburgerMenu {
+        right: -3.5rem;
+    
+        label {
+            margin-left: 0;
+        }
+    
+        input:checked ~ .menuContent {
+            max-width: 85%;
+            li {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+// CONTACT INFO
+
+.postMessage {
+    padding: 4rem 2.5rem; 
+
+    form {
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.messageNameEmail {
+    margin-bottom: 4rem;
+    input[type=text], 
+    input[type=email] {
+        width: 90%;
+        font-size: 1.6rem;
+        padding: 3.5rem 1rem 2.5rem 1rem;
+    }
+}
+
+.messageSubmission {
+    textarea {
+        font-size: 1.6rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+    }
+}
+
+.locationEmail {
+    padding: 1rem 0 2rem 0;
+}
+
+.locationAddress {
+    p {
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+    }
+}
+
+// FOOTER 
+
+.contactFooter {
+    p {
+        font-size: 1.4rem;
+    }
+}
+}

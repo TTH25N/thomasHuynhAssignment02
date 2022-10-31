@@ -1,0 +1,33 @@
+@use "../global/variables";
+
+.newMaterials {
+    margin-top: 20rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.newMaterialsText {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.purpleCoachImg {
+    margin-left: 5rem;
+    
+    img {
+        box-shadow: -2rem 2rem 0 0 variables.$brightYellow;
+    }
+}
+
+

@@ -1,0 +1,50 @@
+@use "../global/variables";
+
+.newLocationsGroupPrograms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newLocationsContainer, .groupProgramsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.newLocationsImg {
+    position: relative;
+    bottom: 4.75rem;
+
+    img {
+        box-shadow: 3rem 3rem 0 -1rem variables.$brightYellow;
+    }
+}
+
+.groupProgramsImg {
+    position: relative;
+    top: 5rem;
+
+    img {
+        box-shadow: -3rem 3rem 0 -1rem variables.$brightYellow;
+    }
+}
+
+.newLocationsText, .groupProgramsText {
+    margin-top: 10rem;
+    margin-bottom: 7.5rem;
+    width: 82.5%;
+
+    p {
+        padding-top: 0.75rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.newLocationsText {
+    text-align: right;
+    align-self: flex-end;
+}
