@@ -11,3 +11,17 @@ gpButton.addEventListener("click", (event) => {
         gpButton.textContent = "Read More";
     }
 })
+
+const nlPara = document.querySelector(".newLocationsPara");
+const nlMoreText = document.querySelector(".newLocationsMoreText");
+const nlButton = document.querySelector(".newLocationsButton");
+
+nlButton.addEventListener("click", (event) => {
+    if (event.target.textContent === "Read More") {
+        nlMoreText.style.display = "inline";
+        nlButton.textContent = "Read Less";
+    } else {
+        nlMoreText.style.display = "none";
+        nlButton.textContent = "Read More";
+    }
+})
