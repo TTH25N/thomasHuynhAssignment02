@@ -615,6 +615,10 @@ section:nth-of-type(2n) {
       align-self: flex-end;
 }
 
+.groupProgramsMoreText {
+  display: none;
+}
+
 .searchByStyleText {
   margin: 20rem auto;
   width: 82.5%;
